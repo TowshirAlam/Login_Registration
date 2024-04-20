@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/register_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Please enter your detalis to Register on the App"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <TextView
+            android:id="@+id/fullname_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_head"
+            android:layout_marginTop="50dp"
+            android:padding="6dp"
+            android:text="Full Name"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edittext_fulname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullname_head"
+            android:background="@drawable/border"
+            android:hint="Enter your name..."
+            android:inputType="textPersonName"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/email_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_fulname"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edittext_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_head"
+            android:background="@drawable/border"
+            android:hint="Enter your email..."
+            android:inputType="textEmailAddress"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dob_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_email"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="Date of Birth (dd/mm/yyyy)*"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edittext_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dob_head"
+            android:focusable="false"
+            android:background="@drawable/border"
+            android:hint="Enter your Date of Birth (dd/mm/yyyy)"
+            android:inputType="date"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gender_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_dob"
+            android:layout_marginTop="10dp"
+            android:text="Gender"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/gender_head">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_female"
+                android:text="Female"
+                android:textColor="#555555"
+                android:textSize="16sp"
+                android:padding="6dp"
+                android:layout_marginRight="16dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_male"
+                android:text="Male"
+                android:textColor="#555555"
+                android:textSize="16sp"
+                android:padding="6dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/mobile_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_gender"
+            android:layout_marginTop="10dp"
+            android:text="Mobile"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edittext_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile_head"
+            android:background="@drawable/border"
+            android:hint="Enter your mobile no. (without +91)"
+            android:inputType="number"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/password_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_mobile"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password_head"
+            android:background="@drawable/border"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cnfpassword_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_password"
+            android:layout_marginTop="10dp"
+            android:text="Confirm Password"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edittext_cnfpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cnfpassword_head"
+            android:background="@drawable/border"
+            android:hint="Enter your password again"
+            android:inputType="textPassword"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_cnfpassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="70dp"
+            android:text="Register" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</ScrollView>
